@@ -49,7 +49,7 @@ def create_session_object():
 
     session = Session.builder.configs(connection_parameters).create()
 
-    print(session.sql('select current_warehouse(), current_database(), current_schema()').collect())
+    #print(session.sql('select current_warehouse(), current_database(), current_schema()').collect())
     return session
 
 #Extract the data from SnowFlake load on pandas DataFrame 
