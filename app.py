@@ -24,9 +24,15 @@ st.set_page_config(
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'https://www.vinoddhole.com',
-         'About': "This is the *Stock Price Prediction* app powered by AWS, Snowflake, Python, Snowpark and Streamlit"
+         'About': "The **Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit"
      }
  )
+
+# Adding SideBar
+st.sidebar.title("Stock Price Prediction")
+st.sidebar.markdown("The **Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit")
+st.sidebar.markdown("Author: [Vinod Dhole](https://www.vinoddhole.com)")
+st.sidebar.markdown("Source: [Github](https://github.com/vinodvidhole/stockprice-predictions)")
 
 # Create Session object
 def create_session_object():
