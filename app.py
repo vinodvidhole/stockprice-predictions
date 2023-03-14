@@ -24,13 +24,13 @@ st.set_page_config(
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'https://www.vinoddhole.com',
-         'About': "The **Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit"
+         'About': "**Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit"
      }
  )
 
 # Adding SideBar
 st.sidebar.title("Stock Price Prediction")
-st.sidebar.markdown("The **Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit")
+st.sidebar.markdown("**Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit")
 st.sidebar.markdown("Author: [Vinod Dhole](https://medium.com/@vinodvidhole)")
 st.sidebar.markdown('''
 Step by Step Guide to build this app : [Part 1](https://medium.com/@vinodvidhole/c304a8b3e319)
