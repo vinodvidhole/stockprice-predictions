@@ -31,7 +31,7 @@ st.set_page_config(
 # Adding SideBar
 st.sidebar.title("Stock Price Prediction")
 st.sidebar.markdown("The **Stock Price Prediction** App powered by AWS, Snowflake, Python, Snowpark and Streamlit")
-st.sidebar.markdown("Author: [Vinod Dhole](https://medium.com/@vinodvidhole"))
+st.sidebar.markdown("Author: [Vinod Dhole](https://medium.com/@vinodvidhole)")
 st.sidebar.markdown('''
 Step by Step Guide to build this app : [Part 1](https://medium.com/@vinodvidhole/c304a8b3e319)
 ,[Part 2](https://medium.com/@vinodvidhole/3f20763ac7a6)
