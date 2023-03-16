@@ -39,6 +39,7 @@ Step by Step Guide to build this app : [Part 1](https://medium.com/@vinodvidhole
 '''
 )
 st.sidebar.markdown("Source: [Github](https://github.com/vinodvidhole/stockprice-predictions)")
+st.sidebar.markdown("Disclaimer: The purpose of this app is only to demonstrate machine learning lifecycle using multiple techniques & tools like Snowflake, AWS, Python and Streamlit. This is not investment advice.")
 
 # Create Session object
 def create_session_object():
