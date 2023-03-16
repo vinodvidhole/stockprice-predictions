@@ -137,14 +137,25 @@ if __name__ == "__main__":
     fig = dict(data=data, layout=layout)
     st.plotly_chart(fig)
 
+    with st.expander("Click me for Help!"):
+        st.write("""
+            Use the slidebar to choose the number of future days to predict.
+
+            Select (Yes/No) option to include historical dates for predictions
+            """)
+
     #Slider bar for users to select no. future days Range 1 - 1825 days, default is 180 days 
     days = st.slider('Select No. of days for prediction', 1, 1852,180)
     
     #Yes/No Selection option to show Historical Prices
-    show_history = st.selectbox(
+    show_history_option = st.selectbox(
         "Show Historical Predicted Prices?",
-        ("N", "Y")
+        ("No", "Yes")
     )
+    if show_history_option=='Yes':
+        show_history = 'Y'
+    else:
+        show_history = 'N'
 
     #On Button click run code inside if statement 
     if st.button('Forecast Predictions'):
